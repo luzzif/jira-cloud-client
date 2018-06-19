@@ -17,8 +17,18 @@
             <distribution>repo</distribution>
         </license>
     </licenses>
+    <developers>
+        <developer>
+            <name>Federico Luzzi</name>
+            <email>fedeluzzi00@gmail.com</email>
+            <organization>Mondora</organization>
+            <organizationUrl>https://www.mondora.com</organizationUrl>
+        </developer>
+    </developers>
     <scm>
-        <url>https://github.com/luzzif/jira-cloud-client</url>
+        <connection>scm:git:git://github.com/luzzif/jira-cloud-client.git</connection>
+        <developerConnection>scm:git:ssh://github.com:luzzif/jira-cloud-client.git</developerConnection>
+        <url>http://github.com/luzzif/jira-cloud-client/tree/master</url>
     </scm>
     <dependencies>
         <dependency>
@@ -45,37 +55,13 @@
         </dependency>
     </dependencies>
     <distributionManagement>
-        <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
+        <repository>
+            <id>bintray-foss-repo</id>
+            <url>https://api.bintray.com/maven/luzzif/foss/jira-cloud-client/;publish=1</url>
+        </repository>
     </distributionManagement>
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.sonatype.plugins</groupId>
-                <artifactId>nexus-staging-maven-plugin</artifactId>
-                <version>1.6.7</version>
-                <extensions>true</extensions>
-                <configuration>
-                    <serverId>ossrh</serverId>
-                    <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-                    <autoReleaseAfterClose>true</autoReleaseAfterClose>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-source-plugin</artifactId>
-                <version>2.2.1</version>
-                <executions>
-                    <execution>
-                        <id>attach-sources</id>
-                        <goals>
-                            <goal>jar-no-fork</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
