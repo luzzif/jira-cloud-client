@@ -38,6 +38,8 @@ public class OAuthClientTest {
 
     /**
      * Test related to {@link OAuthClient#getRequestToken(String)}.
+     *
+     * @throws Exception When an unexpected error is found.
      */
     @Test
     public void getRequestTokenTest() throws Exception {
@@ -63,6 +65,8 @@ public class OAuthClientTest {
 
     /**
      * Test related to {@link OAuthClient#getAccessToken(String, String)}}.
+     *
+     * @throws Exception When an unexpected error is found.
      */
     @Test
     public void getAccessTokenTest() throws Exception {
@@ -100,6 +104,11 @@ public class OAuthClientTest {
 
     }
 
+    /**
+     * Cleans up the test environment.
+     *
+     * @throws Exception When an unexpected error is found.
+     */
     @After
     public void cleanup() throws Exception {
 

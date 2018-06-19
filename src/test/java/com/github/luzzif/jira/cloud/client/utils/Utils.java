@@ -13,6 +13,8 @@ public class Utils {
      * Sets a singleton mock of type {@link ResourcesManager}.
      *
      * @param mock The mock to be set as singleton.
+     *
+     * @throws Exception When an unexpected error is found.
      */
     public static void setSingletonMock(ResourcesManager mock) throws Exception {
 
