@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/luzzif/jira-cloud-client.svg?branch=master)](https://travis-ci.org/luzzif/jira-cloud-client)
+
 # Jira Cloud client
 
 A lightweight Jira Cloud REST API's client leveraging OAuth 1.0.
