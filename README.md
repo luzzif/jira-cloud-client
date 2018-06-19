@@ -40,6 +40,11 @@ Format: `[type]: subject`.
 [chore]: initial commit
 ```
 
+### Usage
+
+The library is hosted on Bintray. To see how to use it in your project 
+simply go [here](https://bintray.com/luzzif/foss/jira-cloud-client)
+
 ### Documentation
 
 The documentation can be found [here](https://luzzif.github.io/jira-cloud-client)
