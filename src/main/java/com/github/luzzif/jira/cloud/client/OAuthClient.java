@@ -22,6 +22,12 @@ public class OAuthClient {
     private PrivateKey privateKey;
 
     /**
+     * Empty constructor.
+     */
+    public OAuthClient() {
+    }
+
+    /**
      * Default constructor.
      *
      * @param jiraSubdomain The Jira Cloud's instance subdomain.
