@@ -127,4 +127,28 @@ public class OAuthClient {
 
     }
 
+    public String getJiraSubdomain() {
+        return jiraSubdomain;
+    }
+
+    public void setJiraSubdomain(String jiraSubdomain) {
+        this.jiraSubdomain = jiraSubdomain;
+    }
+
+    public String getConsumerKey() {
+        return consumerKey;
+    }
+
+    public void setConsumerKey(String consumerKey) {
+        this.consumerKey = consumerKey;
+    }
+
+    public PrivateKey getPrivateKey() {
+        return privateKey;
+    }
+
+    public void setPrivateKey(PrivateKey privateKey) {
+        this.privateKey = privateKey;
+    }
+
 }
